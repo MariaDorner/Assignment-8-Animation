@@ -1,0 +1,95 @@
+* {
+  background-color: #faf8f1;
+}
+/*Header*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding: 20px 10px 20px 10px;
+  background-color: #e5ba73;
+  align-items: center;
+}
+.header-nav,
+.header-title {
+  background-color: #e5ba73;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Eagle Lake", cursive;
+}
+.header-title {
+  font-size: 40px;
+}
+/*Main*/
+.main-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  column-gap: 20px;
+  background-color: #faf8f1;
+  justify-content: space-evenly;
+}
+.castle-img {
+  width: 500px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 5px #a0825179;
+}
+.castle-img:hover {
+  animation: imgShake 2s ease 1;
+}
+
+@keyframes imgShake {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 20deg;
+  }
+  50% {
+    rotate: -15deg;
+  }
+  75% {
+    rotate: 10deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  width: 500px;
+  border: 2px solid #a08251;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f5e3c7;
+  box-shadow: 10px 10px 5px 5px #a0825179;
+}
+.main-text,
+.main-title {
+  font-family: "Eagle Lake", cursive;
+  line-height: 1.6;
+  color: #453822;
+  background-color: #f5e3c7;
+}
+.main-title {
+  font-size: 30px;
+}
+.btn {
+  border: none;
+  font-size: 30px;
+  background-color: #e5ba73;
+  color: #fff;
+  font-family: "Eagle Lake", cursive;
+  border-radius: 5px;
+  width: 150px;
+  height: 60px;
+  transition: 0.6s;
+}
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 3px 3px #a082518a;
+}
